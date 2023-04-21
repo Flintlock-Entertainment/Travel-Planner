@@ -7,12 +7,13 @@ using TMPro;
 public class Information : MonoBehaviour
 {
     [SerializeField] public string text;
+    
     // Start is called before the first frame update
     void Start()
     {
-        text = default;   
+        text = default;
     }
-    
+
     private void OnEnable()
     {
         GetComponent<TextMeshPro>().text = text;

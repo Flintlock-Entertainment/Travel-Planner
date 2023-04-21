@@ -40,7 +40,7 @@ public class TripManager : MonoBehaviour
 
     private void updatePanel()
     {
-            GetComponent<TextMeshPro>().text =  "locations: " + locations + "\n" +
+            GetComponent<TextMeshPro>().text = "locations: " + locations + "\n" +
             "Total Price: " + totalPrice + "$\n" +
             "Intrests:\n" +
             "* History: " + historyScore / numOfLocations + "/5\n" +
