@@ -28,5 +28,5 @@ public class Game : MonoBehaviour
             "* Shopping: " + messageData[4] + "/5\n" +
             "* Attraction: " + messageData[5] + "/5\n";
         clientMessage.GetComponent<TextMeshPro>().text = message;
-    }    
+    }
 }

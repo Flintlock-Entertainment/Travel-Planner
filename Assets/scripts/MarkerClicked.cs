@@ -5,7 +5,7 @@ using UnityEngine;
 public class MarkerClicked : MonoBehaviour
 {
     private LocationData data;
-    private  TripManager tripPlan;
+    private TripManager tripPlan;
     private bool wasClicked;
 
     private void Start()
@@ -14,6 +14,7 @@ public class MarkerClicked : MonoBehaviour
         tripPlan = GameObject.FindGameObjectWithTag("planText").GetComponent<TripManager>();
         wasClicked = false;
     }
+
     private void OnMouseDown()
     {
         Debug.Log("clicked");

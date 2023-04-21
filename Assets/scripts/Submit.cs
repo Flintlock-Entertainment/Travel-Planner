@@ -4,15 +4,15 @@ using UnityEngine;
 using TMPro;
 public class Submit : MonoBehaviour
 {
-    [SerializeField]public TripManager tripManager;
-    [SerializeField]public Game gameManager;
+    [SerializeField] public TripManager tripManager;
+    [SerializeField] public Game gameManager;
     [SerializeField] public GameObject report;
     [SerializeField] public GameObject reportBoard;
 
     private void WriteReport()
     {
-        int[] data =  gameManager.messageData;
-        float score =0f;
+        int[] data = gameManager.messageData;
+        float score = 0f;
         score += abs(data[2] - tripManager.GetHistory());
         score += abs(data[3] - tripManager.GetNature());
         score += abs(data[4] - tripManager.GetShopping());
